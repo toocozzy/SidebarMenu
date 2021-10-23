@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 3.5rem 0 0 0;
+  padding: 1rem 1rem 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.938rem;
+  background-color: #f9f6fd;
+  color: #58555e;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 1px 0 rgba(22, 8, 4, 0.1);
+  padding: 0 1rem;
+  z-index: 100;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  height: 3.5rem;
+  justify-content: space-between;
+}
+
+.header__img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.header__logo {
+  color: #19181b;
+  font-weight: 500;
+  display: none;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0.75rem;
+  background-color: #f4f0fa;
+  border-radius: 0.25rem;
+}
+
+.header__input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #f4f0fa;
+}
+
+.header__input::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #58555e;
+}
+
+.header__icon,
+.header__toggle {
+  font-size: 1.2rem;
+}
+
+.header__toggle {
+  color: #19181b;
+  cursor: pointer;
+}
