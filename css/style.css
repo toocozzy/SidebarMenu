@@ -105,7 +105,7 @@ img {
   scrollbar-width: none;
 }
 
-.nav::-webkit-scrollbar {
+.nav__container::-webkit-scrollbar {
   display: none;
 }
 
@@ -157,4 +157,45 @@ img {
 
 .nav__logout {
   margin-top: 5rem;
+}
+
+.nav__dropdown {
+  overflow: hidden;
+  max-height: 21px;
+  transition: 0.3s ease;
+}
+
+.nav__dropdown-collapse {
+  background-color: #f4f0fa;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+}
+
+.nav__dropdown-content {
+  display: grid;
+  row-gap: 0.5rem;
+  padding: 0.75rem 2.5rem 0.75rem 1.8rem;
+}
+
+.nav__dropdown-item {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #58555e;
+}
+
+.nav__dropdown-items:hover {
+  color: #6923d0;
+}
+
+.nav__dropdown-icon {
+  margin-left: auto;
+  transition: 0.3s ease;
+}
+
+.nav__dropdown:hover {
+  max-height: 100rem;
+}
+
+.nav__dropdown:hover .nav__dropdown-icon {
+  transform: rotate(180deg);
 }
